@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><keyComponents>
+  <keyComponent>
+    <!--Banking Account-->
+    <name>ACCOUNTNO</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Business name-->
+    <name>BIZ</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Business name first word-->
+    <name>BIZFIRST</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Business identifier-->
+    <name>BIZIDENT</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Branch Identifier-->
+    <name>BRANCHID</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Broker identifier-->
+    <name>BROKERID</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--House name or Number-->
+    <name>BUILDING</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--CC number (hash)-->
+    <name>CCARD</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Claim Number-->
+    <name>CLAIMNO</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Claim Number + Party Number combined-->
+    <name>CLAIMNOPARTYNO</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Date of birth-->
+    <name>DOB</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists>
+      <coldList>
+        <term>1900-01-01</term>
+        <matchType>EXACT</matchType>
+      </coldList>
+    </coldLists>
+  </keyComponent>
+  <keyComponent>
+    <!--Email Address-->
+    <name>EMAIL</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Forename-->
+    <name>FORENAME</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Fullname-->
+    <name>FULLNAME</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--International Bank Account number-->
+    <name>IBAN</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Personal identifier-->
+    <name>IDENTIFIER</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Identifier type-->
+    <name>IDENTIFIERTYPE</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Incident Date-->
+    <name>INCIDENTDATE</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Initial-->
+    <name>INIT</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Intel Number-->
+    <name>INTELNO</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Landline number-->
+    <name>LANDLINE</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Driving Licence number-->
+    <name>LICENCENO</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--ID in raw data used to link documents together-->
+    <name>LINKID</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Mobile number-->
+    <name>MOBILE</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Party number-->
+    <name>PARTYNO</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Postcode-->
+    <name>PCDE</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Policy Number-->
+    <name>POLICYNO</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Flat Name-->
+    <name>SUBBUILD</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Surname-->
+    <name>SURNAME</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--Vehicle Identification number-->
+    <name>VIN</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+  <keyComponent>
+    <!--License plate number-->
+    <name>VRN</name>
+    <dataType>CHARACTER</dataType>
+    <coldLists/>
+  </keyComponent>
+</keyComponents>
