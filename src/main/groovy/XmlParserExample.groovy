@@ -39,7 +39,7 @@ println keyComponents.keyComponent[0].name.text() == 'ACCOUNTNO'
 assert !keyComponents.keyComponent[0].name.isEmpty()
 //println keyComponents instanceof groovy.util.Node // It specifies the return response as the root node
 
-metadata.remove(metadata.KeyComponentTypes).toString().trim()
+metadata.remove(metadata.KeyComponentTypes)
 new File('../../../src/main/resources/test.xml').withWriter { w ->
     XmlUtil.serialize(metadata, w)
 }
@@ -51,7 +51,7 @@ String strLine
 while ((strLine=br.readLine())!=null) {
     if (strLine.length()>0){
         println strLine
-        out.write(strLine +'\n')
+        out.write(strLine.replaceAll('[\\r\\n\\t\\f\\v ]', '') +'\n')
         out.flush()
     }
 
