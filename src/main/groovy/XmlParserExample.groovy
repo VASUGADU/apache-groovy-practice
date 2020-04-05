@@ -39,7 +39,13 @@ println keyComponents.keyComponent[0].name.text() == 'ACCOUNTNO'
 assert !keyComponents.keyComponent[0].name.isEmpty()
 //println keyComponents instanceof groovy.util.Node // It specifies the return response as the root node
 
-metadata.remove(metadata.KeyComponentTypes)
+
+def text = metadataPath.text.replaceAll('</DataSources>[\\s\\S]*</KeyComponentTypes>', '</DataSources>')
+metadataPath.withWriter { w ->
+    w.write(text)
+}
+
+/*metadata.remove(metadata.KeyComponentTypes)
 new File('../../../src/main/resources/test.xml').withWriter { w ->
     XmlUtil.serialize(metadata, w)
 }
@@ -55,5 +61,5 @@ while ((strLine=br.readLine())!=null) {
         out.flush()
     }
 
-}
+}*/
 
