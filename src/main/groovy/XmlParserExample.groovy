@@ -29,22 +29,25 @@ def keyComponentsXml = builder.bind {
     }
 }
 
+//create and write keyComponents.xml file
 new File('../../../src/main/resources/keyComponents.xml').withWriter { w ->
     XmlUtil.serialize(keyComponentsXml, w)
 }
 
+//remove the KeyComponentsTypes from metadata xml
+def text = metadataPath.text.replaceAll('</DataSources>[\\s\\S]*</KeyComponentTypes>', '</DataSources>')
+metadataPath.withWriter { w ->
+    w.write(text)
+}
+
+//test keyComponents.xml is not empty
 def path = new File('../../../src/main/resources/keyComponents.xml')
 def keyComponents = new XmlParser().parseText(path.text)
 println keyComponents.keyComponent[0].name.text() == 'ACCOUNTNO'
 assert !keyComponents.keyComponent[0].name.isEmpty()
 //println keyComponents instanceof groovy.util.Node // It specifies the return response as the root node
 
-
-def text = metadataPath.text.replaceAll('</DataSources>[\\s\\S]*</KeyComponentTypes>', '</DataSources>')
-metadataPath.withWriter { w ->
-    w.write(text)
-}
-
+//tried removing KeyComponentTypes node from xmlParser obj.
 /*metadata.remove(metadata.KeyComponentTypes)
 new File('../../../src/main/resources/test.xml').withWriter { w ->
     XmlUtil.serialize(metadata, w)
